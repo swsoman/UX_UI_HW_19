@@ -23,9 +23,9 @@
         <p class="titleMain nav-item">swaroopa</p>
 
         <ul class="nav-item" style="list-style-type: none">
-          <li class="inlineBlock" id=hoverAbout>about</li>
+          <li class="inlineBlock" id="aboutlink">about</li>
           <li class="inlineBlock">work</li>
-          <li class="inlineBlock">contact</li>
+          <li class="inlineBlock" id="contactlink">contact</li>
         </ul>
       </nav>
       <p class="subTitle">User Experience and User Interface Designer</p>
@@ -33,7 +33,7 @@
     <!-- ------------------Industry Skills----------------- -->
 
     <!-- <section class="blank"></section> -->
-    <section class="projects">
+    <section class="projects" id="projectBackdrop">
       <div class="Container_grid">
         <div class="projectCard1">
           <p class="titleProject">Alfred</p>
@@ -137,8 +137,10 @@
         </p>
       </div>
       <div class="content">
+        <h1>DESIGN STRATEGY</h1>
         <p class="contentBold">
-          User Centered | Goal oriented  </br> Critical Reasoning
+          User Centered | Goal oriented <br />
+          Critical Reasoning
         </p>
         <p>
           My UX strategy is simple, analyzing where we are in the design
@@ -148,11 +150,53 @@
         </p>
       </div>
     </section>
-    <!-- <section class="blank"></section> -->
+    <section class="tools">
+      <div class="content">
+        <h1>TOOLS</h1>
+      </div>
+      <div>
+        <button class="accordion">
+          Create <img src="./Images/plus.svg" class="plus" />
+        </button>
+        <div class="panel">
+          <img src="/Images/Group 168.png" alt="Create" class="toolImage" />
+        </div>
+        <button class="accordion">
+          Prorotype <img src="./Images/plus.svg" class="plus" />
+        </button>
+        <div class="panel">
+          <img src="/Images/Group 169.png" alt="Create" class="toolImage" />
+        </div>
+        <button class="accordion">
+          Build <img src="./Images/plus.svg" class="plus" />
+        </button>
+        <div class="panel">
+          <img src="/Images/Group 170.png" alt="Create" class="toolImage" />
+        </div>
+        <button class="accordion">
+          Test <img src="./Images/plus.svg" class="plus" />
+        </button>
+        <div class="panel">
+          <img src="/Images/Group 171.png" alt="Create" class="toolImage" />
+        </div>
+        <button class="accordion">
+          Collaborate <img src="./Images/plus.svg" class="plus" />
+        </button>
+        <div class="panel">
+          <img src="/Images/Group 172.png" alt="Create" class="toolImage" />
+        </div>
+        <button class="accordion">
+          Platforms <img src="./Images/plus.svg" class="plus" />
+        </button>
+        <div class="panel">
+          <img src="/Images/Group 173.png" alt="Create" class="toolImage" />
+        </div>
+      </div>
+    </section>
 
     <!-- ------------------Contact----------------- -->
 
-    <section class="contact">
+    <section class="contact" id="contactMe">
       <h1>Contact</h1>
       <h3 class="footerContact">Get in Touch</h3>
       <div>
@@ -165,12 +209,12 @@
         </p>
       </div>
       <p>follow me on</p>
-      <div class="socialMediaFooter">
-        <img src="./Images/fb.svg" alt="fb link" />
-        <img src="./Images/ig.svg" alt="ig link" />
-        <img src="./Images/dr.svg" alt="drible link" />
-        <img src="./Images/in.svg" alt="linkedin link" />
-        <img src="./Images/be.svg" alt="behence link" />
+      <div class="socialMediaFooter1">
+        <img src="./Images/fb.svg" alt="fb link" class="fblink" />
+        <img src="./Images/ig.svg" alt="ig link" class="iglink" />
+        <img src="./Images/dr.svg" alt="drible link" class="drlink" />
+        <img src="./Images/in.svg" alt="linkedin link" class="inlink" />
+        <img src="./Images/be.svg" alt="behence link" class="belink" />
       </div>
     </section>
 
@@ -223,6 +267,6 @@
       </div>
     </footer>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/index.js"></script>
 </html>

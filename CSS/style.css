@@ -167,7 +167,12 @@ footer ul {
   padding-bottom: 50px;
   padding-top: 50px;
 }
-
+.tools {
+  color: #303030;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
 .industrySkills {
   color: #303030;
   background-color: #f7e6ea;
@@ -204,11 +209,40 @@ footer ul {
   display: grid;
   height: auto;
   /* align-items: center; */
-  background-image: url(../Images/background_projects.jpg);
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0 auto;
 }
+#projectBackdrop {
+  background: url(/Images/Green\ and\ Pink\ Trees\ Geometric\ Zoom\ Virtual\ Background.jpg)
+    repeat 0 0;
+  animation: duration 200s;
+  animation-name: slide;
+  -webkit-animation: slide 200s linear infinite;
+}
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1200px 0;
+  }
+}
+@-webkit-keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1200px 0;
+  }
+}
+.toolImage {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* .socialMediaFooter img :hover {
+} */
 .Container_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -277,7 +311,32 @@ footer ul {
   font-size: 18px;
   font-weight: 400;
 }
-
+.accordion {
+  background-color: #cfe0c3;
+  color: #303030;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.plus {
+  offset-position: 10px;
+  width: 12px;
+  height: 12px;
+}
+.active,
+.accordion:hover {
+  background-color: #f7e6ea;
+}
+.panel {
+  padding: 0 10px;
+  background-color: #ffffff;
+  display: none;
+  overflow: hidden;
+}
 /* Media Querys */
 @media only screen and (max-width: 600px) {
   .Container_grid {
