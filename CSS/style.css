@@ -170,8 +170,9 @@ footer ul {
 .tools {
   color: #303030;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   padding-top: 50px;
+  background-color: #f7e6ea;
 }
 .industrySkills {
   color: #303030;
