@@ -56,6 +56,7 @@ header {
   vertical-align: top;
   align-items: center;
 }
+
 nav,
 nav ul {
   font-family: "Righteous", cursive;
@@ -70,6 +71,7 @@ nav ul {
 nav li {
   padding-left: 20px;
   padding-right: 20px;
+  cursor: pointer;
 }
 .blank {
   height: 300px;
@@ -224,6 +226,7 @@ footer ul {
   height: 300px;
   width: 250px;
   margin: 10px;
+  cursor: pointer;
 }
 .projectCard2 {
   grid-column-start: 2;
@@ -236,6 +239,7 @@ footer ul {
   height: 300px;
   width: 250px;
   margin: 10px;
+  cursor: pointer;
 }
 .projectCard3 {
   grid-column-start: 3;
@@ -248,6 +252,7 @@ footer ul {
   height: 300px;
   width: 250px;
   margin: 10px;
+  cursor: pointer;
 }
 .titleProject {
   font-family: "Lato", sans-serif;
