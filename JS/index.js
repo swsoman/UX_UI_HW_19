@@ -39,19 +39,36 @@ $(document).ready(function () {
     }
   );
   // Accordion for tools //
-  var acc = document.getElementsByClassName("accordion");
-  var i;
 
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("active");
+  $(".accordion").each(function (index, acc_element) {
+    console.log(acc_element);
 
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
+    $(acc_element).on("click", function () {
+      if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this).next(".panel").css("display", "none");
+
+        $(this).find(".minus").css("display", "none");
+        $(this).find(".plus").css("display", "inline");
       } else {
-        panel.style.display = "block";
+        $(this).addClass("active");
+        $(this).next(".panel").css("display", "block");
+        $(this).find(".minus").css("display", "inline");
+        $(this).find(".plus").css("display", "none");
       }
     });
-  }
+  });
+
+  // for (i = 0; i < acc.length; i++) {
+  //   acc[i].addEventListener("click", function () {
+  //     this.classList.toggle("active");
+
+  //     var panel = this.nextElementSibling;
+  //     if (panel.style.display === "block") {
+  //       panel.style.display = "none";
+  //     } else {
+  //       panel.style.display = "block";
+  //     }
+  //   });
+  // }
 });

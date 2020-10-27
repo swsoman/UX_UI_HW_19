@@ -323,11 +323,16 @@ footer ul {
   outline: none;
   transition: 0.4s;
 }
-.plus {
+.accordion img {
   offset-position: 10px;
   width: 12px;
   height: 12px;
 }
+
+.minus {
+  display: none;
+}
+
 .active,
 .accordion:hover {
   background-color: #f7e6ea;
