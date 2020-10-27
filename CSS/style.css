@@ -343,6 +343,12 @@ footer ul {
   display: none;
   overflow: hidden;
 }
+
+.socialMediaFooter1,
+.socialMediaFooter {
+  height: 55px;
+}
+
 /* Media Querys */
 @media only screen and (max-width: 600px) {
   .Container_grid {
