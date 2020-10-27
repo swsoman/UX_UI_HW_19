@@ -1,3 +1,5 @@
+console.log("your index.js file is loaded correctly!");
+
 $(document).ready(function () {
   $("nav li").hover(
     function () {
